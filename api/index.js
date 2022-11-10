@@ -19,8 +19,7 @@ const connect = async () => {
       throw error;
     }
   };
-
- 
+  
   mongoose.connection.on("connected", () => {
     console.log("mongoDB connected!");
   });
